@@ -1,0 +1,252 @@
+body {
+  overflow-x: hidden;
+  font-family: 'Oswald', sans-serif;
+}
+
+* {
+  color: #160903;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 60px 0;
+  z-index: 999;
+  transition: 0.5s;
+}
+.scroll-heder{
+  transition: 0.5s;
+  padding: 5px 0;
+  background-color: #8B4222;
+  box-shadow: 0 0 10px 1px #160903;
+}
+.header .logo {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.header-inner {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-inner ul {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  margin-bottom: 0;
+}
+
+.header-inner ul li {
+  list-style: none;
+}
+
+.main-block {
+  height: 748px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.main-block .back-color {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: rgba(139, 66, 34, 0.7);
+}
+
+.main-block .container {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-block-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.main-block-inner .title {
+  font-weight: 700;
+  font-size: 48px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.main-block-inner .title::before {
+  content: '';
+  width: 50%;
+  height: 3px;
+  position: absolute;
+  top: -10px;
+  left: 25%;
+  background-color: #160903;
+
+}
+
+.main-block-inner .title::after {
+  content: '';
+  width: 50%;
+  height: 3px;
+  position: absolute;
+  bottom: -10px;
+  left: 25%;
+  background-color: #160903;
+
+}
+
+.main-block-inner a {
+  font-weight: 700;
+  font-size: 32px;
+  text-decoration: none;
+  color: #160903;
+  border: 3px solid #160903;
+  padding: 15px 3px;
+}
+
+.main-block .bottom-rgad {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  background: linear-gradient(180deg, rgba(139, 66, 34, 0) 0%, #8B4222 100%);
+  height: 55px;
+  width: 100%;
+}
+
+.about-block {
+  background-color: #8B4222;
+  position: relative;
+  /* height: 1000px; */
+  padding-top: 130px;
+  padding-bottom: 145px;
+}
+
+.about-block .background-image {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: -3px;
+  left: 0;
+  z-index: 1;
+}
+
+.about-block .container {
+  position: relative;
+  z-index: 2;
+}
+
+.about-block .title {
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about-block .subtitle {
+  font-weight: 700;
+  font-size: 26px;
+  text-align: center;
+  margin: 10px 0 40px 0;
+}
+.about-block .row{
+  display: flex;
+  align-items: center;
+}
+.about-block .left div{
+  font-weight: 700;
+  font-size: 24px;
+  color: #8B4222;
+  width: 352px;
+}
+
+.about-block .right div:last-child{
+  font-weight: 700;
+  font-size: 24px;
+  color: #8B4222;
+  width: 352px;
+  text-align: right;
+}
+
+.about-block .right div:first-child{
+  font-weight: 700;
+  font-size: 24px;
+  color: #160903;
+  margin-bottom: 330px;
+  width: 370px;
+  text-align: right;
+}
+
+.footer{
+  background-color: #160903;
+  padding: 130px 0;
+}
+
+.footer .title{
+  color: #8B4222 !important;
+  text-align: center;
+  font-weight: 700;
+  font-size: 48px;
+}
+.footer .text{
+  color: #8B4222 !important;
+  text-align: center;
+  font-weight: 700;
+  font-size: 26px;
+  width: 440px;
+  margin: auto;
+  margin-top: 10px;
+}
+.footer .link-title{
+  color: #8B4222 !important;
+  font-weight: 700;
+font-size: 24px;
+text-align: left;
+width: 380px;
+margin: 30px 0;
+}
+
+.footer .links{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .links .link{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.footer .links .link span{
+  color: #8B4222;
+  font-weight: 500;
+font-size: 24px;
+}
+
+
+.text-hidden {
+  opacity: 0;
+}
+
+.text-visible {
+  opacity: 1;
+  transition: opacity 1.5s ease-in-out;
+}
